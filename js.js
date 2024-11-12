@@ -1,6 +1,15 @@
-let value = prompt('What is the "official" name of JavaScript?', '');
-if (value == 'ECMAScript') {
-    alert('Right!');
+let userName = prompt("Who's there?", '');
+if (userName === 'Admin') {
+    let pass = prompt('Password?', '');
+    if (pass === 'TheMaster') {
+        alert('Welcome!');
+    } else if (pass == null) {
+        alert('Canceled.');
+    } else {
+        alert('Wrong password');
+    }
+} else if (userName == null) {
+    alert('Canceled');
 } else {
-    alert("You don't know? ECMAScript!");
+    alert("I don't know you");
 }
